@@ -1,0 +1,10 @@
+<div class="container" *ngIf="post">
+  <div class="card" style="max-width: 500px; margin: 0 auto;">
+    <img [src]="post.featuredImageUrl" class="card-img-top" alt="featuredImageUrl">
+    <div class="card-body">
+      <h2 class="card-title">{{post.title}}</h2>
+      <article class="card-text" [innerHTML]="post.content"></article>
+      <p>Author: {{post.author}}</p>
+    </div>
+  </div>
+</div>
